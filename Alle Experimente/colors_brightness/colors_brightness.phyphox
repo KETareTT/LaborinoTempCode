@@ -1,0 +1,186 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Helligkeit und Farben</title>
+    <category>Laborino-Experimente</category>
+    <description>Dieses Experiment misst in Echtzeit die Helligkeit und den Farbanteil der Grundfarben rot, grün und blau des einfallenden Lichtes mithilfe des internen Lichtsensors aus und trägt die Messdaten über der Zeit auf.</description>
+    <icon format="base64">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</icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+
+        <!-- DATA                                               -->
+        <container size="0">TIME</container>
+        <container size="0">RED</container>
+        <container size="0">GREEN</container>
+        <container size="0">BLUE</container>
+        <container size="0">BRIGTH</container>
+
+        <container size="0">RED_PERC</container>
+        <container size="0">GREEN_PERC</container>
+        <container size="0">BLUE_PERC</container>
+        <container size="0">BRIGTH_PERC</container>
+
+        <!-- CALCULATION BUFFER                                 -->
+        <container size="0">RED_CAL</container>
+        <container size="0">GREEN_CAL</container>
+        <container size="0">BLUE_CAL</container>
+        <container size="0">BRIGTH_CAL</container>
+
+        <!-- LEN/INDEXES                                        -->
+        <container size="1" init="1">LAST_IND</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="int32LittleEndian" offset="4">RED</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="int32LittleEndian" offset="8">GREEN</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="int32LittleEndian" offset="12">BLUE</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="int32LittleEndian" offset="16">BRIGTH</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">14</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">RED</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">GREEN</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">BLUE</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">BRIGTH</output>
+        </if>
+
+        <!-- ================================================== -->
+        <!-- PREPARE DATA                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS                    -->
+        <subrange>
+            <input as="from" keep="true">LAST_IND</input>
+            <input keep="true">RED</input>
+            <input keep="true">GREEN</input>
+            <input keep="true">BLUE</input>
+            <input keep="true">BRIGTH</input>
+            <output>RED_CAL</output>
+            <output>GREEN_CAL</output>
+            <output>BLUE_CAL</output>
+            <output>BRIGTH_CAL</output>
+        </subrange>
+
+        <!-- SET CURRENT INDEX AS LAST INDEX                    -->
+        <count>
+            <input keep="true">TIME</input>
+            <output>LAST_IND</output>
+        </count>
+
+        <divide>
+            <input keep="true">RED_CAL</input>
+            <input type="value">40.97</input>
+            <output append="true">RED_PERC</output>
+        </divide>
+        <divide>
+            <input keep="true">GREEN_CAL</input>
+            <input type="value">40.97</input>
+            <output append="true">GREEN_PERC</output>
+        </divide>
+        <divide>
+            <input keep="true">BLUE_CAL</input>
+            <input type="value">40.97</input>
+            <output append="true">BLUE_PERC</output>
+        </divide>
+        <divide>
+            <input keep="true">BRIGTH_CAL</input>
+            <input type="value">40.97</input>
+            <output append="true">BRIGTH_PERC</output>
+        </divide>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest den Farben- und Helligkeitssensor des Laborinos in Echtzeit aus. Der Sensor befindet sich direkt unter der kleinen Öffnung oben im Gehäuse. Wusstest du, dass das weiße Sonnenlicht aus vielen verschiedenen Farben wie rot, grün oder blau besteht? Aus welchen Farben setzt sich dann gelbes oder violettes Licht zusammen?"/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="Im Tab LIVE werden die aktuellen Messdaten in Echtzeit angezeigt. Mit dem Tab GRAPH kannst du dir alle  Messdaten über die Zeit auftragen lassen."/>
+        </view>
+        <view label="Live">
+            <info label="Helligkeit:"  bold="true" unit="%"/>
+            <info label="Der folgende Messwert gibt die relative Helligkeit 𝐻 des einfallenden Lichtes im visuellen Spektralbereich an."/>
+            <info label=""/>
+            <value label="𝐻    =" unit="%">
+                <input>BRIGTH_PERC</input>
+            </value>
+            <info label=""/>
+            <info label="Farbanteile:"  bold="true"/>
+            <info label="Die folgenden 3 Messwert geben die relative Helligkeiten im roten (𝑅), grünen (𝐺), und blauen (𝐵) Bereich des Spektrums wieder. Damit lässt sich analysieren aus welchen Farbanteilen das einfallende Licht zusammengesetzt ist."/>
+            <info label=""/>
+            <value label="𝑅    ="  color="red" unit="%">
+                <input>RED_PERC</input>
+            </value>
+            <value label="𝐺    ="  color="green" unit="%">
+                <input>GREEN_PERC</input>
+            </value>
+            <value label="𝐵    ="  color="blue" unit="%">
+                <input>BLUE_PERC</input>
+            </value>
+            <info label=""/>
+
+        </view>
+        <view label="Graph">
+            <info label="Farb- und Helligkeitsverlauf:"  bold="true"/>
+            <info label="Die folgenden 4 Graphen zeigen den zeitlichen Verlauf der relative Helligkeiten im gesamten sichtbaren Licht (𝐻), und im roten (𝑅), grünen (𝐺), und blauen (𝐵) Bereich des Spektrums."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="Helligkeit" unitX="s" unitY="%" xPrecision="3" yPrecision="3">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">RED_PERC</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">GREEN_PERC</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">BLUE_PERC</input>
+                <input axis="x"  color="white">TIME</input>
+                <input axis="y">BRIGTH_PERC</input>
+            </graph>
+        </view>
+    </views>
+    <export>
+        <set name="Farben/Helligkeit">
+            <data name="Zeit t in s">TIME</data>
+            <data name="Helligkeit in %">BRIGTH_PERC</data>
+            <data name="Rot-Helligkeit in %">RED_PERC</data>
+            <data name="Grün-Helligkeit in %">GREEN_PERC</data>
+            <data name="Blau-Helligkeit in %">BLUE_PERC</data>
+        </set>
+    </export>
+</phyphox>

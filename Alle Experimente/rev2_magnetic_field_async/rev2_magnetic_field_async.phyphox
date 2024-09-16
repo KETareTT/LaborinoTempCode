@@ -1,0 +1,259 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.7" editor:version="1.0" locale="">
+    <title>Magnetfeld (Async, Rev2)</title>
+    <category>Laborino-Experimente</category>
+    <description>Dieses Experiment misst die Magnetfeldstärke 𝐵 in x-, y- und z-Richtung über einen wählbaren Zeitraum mit einstellbarer Frequenz und Messbereich und trägt den Betrag sowie die Komponenten aller 3 Raumrichtungen nach Abschluss der Messung in Graphen über der Zeit auf. Um höhere Messfrequenzen als bei der Echtzeitmessung zu ermöglichen, werden die Daten erst nach der Messung übertragen.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+        <container size="1" init="0">STATUS</container>
+
+        <!-- OTHER                                              -->
+        <container size="1" init="1">FS_ID</container>  <!-- FS Doenst work on Rev2, so this just sends a 1, as the setFS function doesnt do anything in Rev2 but is needed as interface -->
+        <container size="1" init="1">FS_VAL</container>
+        <container size="1" init="7">ODR_ID</container>
+        <container size="1" init="30">ODR_VAL</container>
+        <container size="1" init="5">PERIOD</container>
+        <container size="1" >MAX_PERIOD</container>
+
+        <!-- DATA                                               -->
+        <container size="0" >TIME</container>
+        <container size="0" >X</container>
+        <container size="0" >Y</container>
+        <container size="0" >Z</container>
+
+        <!-- CALCULATIONS                                       -->
+        <container size="0" >ABS</container>
+
+        <!-- CALCULATE HELPER                                   -->
+        <container size="0" >X_CAL</container>
+        <container size="0" >Y_CAL</container>
+        <container size="0" >Z_CAL</container>
+        <container size="1" init="0">LAST_IND</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="1">STATUS</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">X</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">Y</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="12">Z</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">9</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="1" conversion="uInt8">FS_ID</input>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="2" conversion="uInt8">ODR_ID</input>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="3" conversion="uInt16LittleEndian">PERIOD</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">X</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Y</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Z</output>
+        </if>
+
+        <!-- CALCULATE THE MAXIMUM POSSIBLE MEASUREMENT TIME BASED ON THE CHOSEN
+        FREQUENCY. WE ASSUMED HERE A MAXIMUM MEASUREMENT LENGTH OF 7200 TIMES 4 (X,Y,Z,TIME)
+        DATAPOINTS. OTHERWISE THE ARDUINOS MEMORY IS TOO FULL. -->
+        <divide>
+            <input as="dividend" type="value">7200</input>
+            <input as="divisor" keep="true">ODR_VAL</input>
+            <output as="quotient">MAX_PERIOD</output>
+        </divide>
+        <!-- IF A TOO LARGE VALUE IS ENTERED FOR THE MEASUREMENT TIME, SET IT
+        MANUALLY BACK TO THE MAXIMUM MEASUREMENT TIME (MAX_PERIOD). -->
+        <if equal="false" greater="true">
+            <input as="a" keep="true">PERIOD</input>
+            <input as="b" keep="true">MAX_PERIOD</input>
+            <input as="true" keep="true">MAX_PERIOD</input>
+            <input as="false" keep="true">PERIOD</input>
+            <output as="result">PERIOD</output>
+        </if>
+        <!-- ================================================== -->
+        <!-- CALCULATIONS                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS                    -->
+        <subrange>
+            <input as="from">LAST_IND</input>
+            <input keep="true">X</input>
+            <input keep="true">Y</input>
+            <input keep="true">Z</input>
+            <output>X_CAL</output>
+            <output>Y_CAL</output>
+            <output>Z_CAL</output>
+        </subrange>
+
+        <!-- SET CURRENT INDEX AS LAST INDEX                    -->
+        <count>
+            <input keep="true">TIME</input>
+            <output>LAST_IND</output>
+        </count>
+
+        <!-- CALCULATE THE ABSOLUTE VALUE OF THE ACCELERATION   -->
+        <formula formula="sqrt([1_]^2+[2_]^2+[3_]^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">ABS</output>
+        </formula>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest den Magnetfeldsensor des Laborinos für einen wählbaren Zeitraum mit einstellbarer Frequenz und Messbereich aus. Die Messdaten werden erst nach dem Ende der Messung übertragen, was höhere Messfrequenzen ermöglicht als bei der Messung in Echtzeit. Diese hohen Messfrequenzen sind insbesondere bei kurzen aber sehr schnellen Phänomenen von Vorteil, wenn eine hohe Zeitauflösung nötig ist. Befindet sich der Laborino in der Nähe eines Magneten oder auch nur eines magnetisierten Stück Metalls ist die Magnetfeldstärke hoch. Entfernst du dich von dem Magneten bzw. Metall sinkt die Magnetfeldstärke aber nicht auf null. Dann wird nur noch das Erdmagnetfeld gemessen. Damit kannst zu zum Beispiel bestimmen, wo Norden ist."/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="In dem GRAPH Tab kannst du dir alle gemessenen Magnetfeldstärken über der Zeit auftragen lassen. Der Tab EINSTELLUNGEN ermöglicht die Auswahl der Messfrequenz und der Messdauer."/>
+        </view>
+        <view label="Graph">
+          <info label="Status deiner Messung:" bold="true"/>
+            <value label="Status:">
+                <input>STATUS</input>
+                <map max="0">Bereit zum Messen (►)!</map>
+                <map max="1">Messung läuft...</map>
+                <map max="2">Datenübertragung läuft...</map>
+                <map max="3">Datenübertragung abgeschlossen!</map>
+            </value>
+            <info label=""/>
+            <info label="Betrag des Magnetfeldes:"  bold="true"/>
+            <info label="Der Betrag des Magnetfeldvektors |𝐵⃗| gibt die gesamte Magnetfeldstärke unabhängig von der Raumrichtung an."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff"  labelX="Zeit 𝑡" labelY="Magnetische Flussdichte 𝐵" unitX="s" unitY="μT" xPrecision="3" yPrecision="3">
+                <input axis="x">TIME</input>
+                <input axis="y">ABS</input>
+            </graph>
+            <info label=""/>
+            <info label="Komponenten des Magnetfeldes:"  bold="true"/>
+            <info label="Die folgenden 3 Graphen geben die Magnetfeldstärke 𝐵 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1" color="ff7e22"  labelX="Zeit 𝑡" labelY="Magnetische Flussichte 𝐵" unitX="s" unitY="μT" xPrecision="3" yPrecision="3">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">X</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">Y</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">Z</input>
+            </graph>
+        </view>
+        <view label="Einstellungen">
+            <info label="Achtung!" bold="true"  color="red"/>
+            <info label="Eine Änderung der Einstellungen ist nur zwischen den Messungen möglich. Lösche dafür zunächst die aktuellen Messdaten, nehme die Änderungen an den Einstellungen vor und starte dann die Messung neu. Bitte beachte auch, dass nach jedem Löschen der Messung die Standardeinstellungen von 30 Hz wiederhergestellt werden." color="red"/>
+            <info label=""/>
+            <info label="Messbereich:" bold="true"/>
+            <info label="Der Messbereich des Magnetfeldsensors (BMM150) in dem Arduino Nano 33 BLE Sense Rev2 ist nicht einstellbar und beträgt etwa ±1300 μT auf der x- und z-Achse und etwa ±2500 μT auf der y-Achse des Laborinos."/>
+            <info label=""/>
+
+            <info label="Messfrequenz:" bold="true"/>
+            <info label="Hier kannst du die Messfrequenz des Magnetfeldsensors einstellen. Du kannst zwischen 2 Hz, 6 Hz, 8 Hz, 10 Hz, 15 Hz, 20 Hz, 25 Hz und 30 Hz auswählen."/>
+            <info label=""/>
+            <value label="Aktuelle Messfrequenz:" precision="0" signed="false" decimal="false"  unit="Hz">
+                <input>ODR_VAL</input>
+            </value>
+            <info label=""/>
+            <button label="2 Hz">
+                <input type="value">2</input>
+                <output>ODR_VAL</output>
+                <input type="value">0</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="6 Hz">
+                <input type="value">6</input>
+                <output>ODR_VAL</output>
+                <input type="value">1</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="8 Hz">
+                <input type="value">8</input>
+                <output>ODR_VAL</output>
+                <input type="value">2</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="10 Hz">
+                <input type="value">10</input>
+                <output>ODR_VAL</output>
+                <input type="value">3</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="15 Hz">
+                <input type="value">15</input>
+                <output>ODR_VAL</output>
+                <input type="value">4</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="20 Hz">
+                <input type="value">20.0</input>
+                <output>ODR_VAL</output>
+                <input type="value">5</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="25 Hz">
+                <input type="value">25</input>
+                <output>ODR_VAL</output>
+                <input type="value">6</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="30 Hz">
+                <input type="value">30</input>
+                <output>ODR_VAL</output>
+                <input type="value">7</input>
+                <output>ODR_ID</output>
+            </button>
+            <info label=""/>
+            <info label="Messdauer:" bold="true"/>
+            <info label="Hier kannst du die Messdauer einstellen. Aufgrund des beschränkten Speicherplatzes auf dem Laborino, ist die Messdauer in Abhängigkeit der Messfrequenz begrenzt."/>
+            <info label=""/>
+            <value label="Maximale Messdauer:" precision="0" signed="false" decimal="false" unit="s">
+                <input>MAX_PERIOD</input>
+            </value>
+            <info label=""/>
+            <edit label="Wähle die Messdauer in Sekunden:" precision="0" signed="false" decimal="false" min="1" max="1000"  default="5">
+                <output>PERIOD</output>
+            </edit>
+        </view>
+    </views>
+    <export>
+        <set name="Magnetfeld">
+            <data name="Zeit t in s">TIME</data>
+            <data name="Betrag der Magnetfeldstärke |B| in μT">ABS</data>
+            <data name="X-Magnetfeldstärke B_x in μT">X</data>
+            <data name="Y-Magnetfeldstärke B_y in μT">Y</data>
+            <data name="Z-Magnetfeldstärke B_z in μT">Z</data>
+        </set>
+    </export>
+</phyphox>

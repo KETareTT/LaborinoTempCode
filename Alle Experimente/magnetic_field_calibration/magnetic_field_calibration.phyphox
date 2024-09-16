@@ -1,0 +1,144 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.7" editor:version="1.0" locale="">
+    <title>Magnetometer-Kalibrierung</title>
+    <category>Laborino-Kalibrierungen</category>
+    <color>fe005d</color>
+    <description>In diesem Experiment wird das Magnetometer des Laborinos kalibriert.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <container size="1" init="1" >BT_OUTC</container>
+        <container size="1" init="0" >BT_INC</container>
+
+        <container size="1" init="0" >MIX</container>
+        <container size="1" init="0" >MAX</container>
+        <container size="1" init="0" >MIY</container>
+        <container size="1" init="0" >MAY</container>
+        <container size="1" init="0" >MIZ</container>
+        <container size="1" init="0" >MAZ</container>
+        <container size="1" init="-1" >STATE</container>
+        <container size="1" init="0" >BUTTONSTATE1</container>
+        <container size="1" init="0" >BUTTONSTATE2</container>
+        <container size="1" init="1" >CONFIRM</container>
+        <container size="1" init="49" >MAGVAL</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="1">STATE</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">MIX</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">MAX</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">MIY</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="12">MAY</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="16">MIZ</output>
+            <output char="da1a0002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">MAZ</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense"  >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">3</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="1" conversion="uInt8">BUTTONSTATE1</input>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="2" conversion="uInt8">BUTTONSTATE2</input>
+            <input char="da1a0001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="float32LittleEndian">CONFIRM</input>
+            <input char="da1a0001-30f7-4671-8b43-5e40ba53514a" offset="4" conversion="float32LittleEndian">MAGVAL</input>
+        </bluetooth>
+    </output>
+<analysis>
+        <if equal="true">
+            <input keep="true">STATE</input>
+            <input type="value">1</input>
+            <input type="value">0</input>
+            <output>BUTTONSTATE1</output>
+        </if>
+        <if equal="true">
+            <input keep="true">STATE</input>
+            <input type="value">0</input>
+            <input type="value">0</input>
+            <output>BUTTONSTATE2</output>
+        </if>
+    </analysis>
+    <views>
+      <view label="Info">
+            <!-- Die Art der Messung für den Beschleunigungssensor folgen den Anweisungen aus folgendem Video: https://www.youtube.com/watch?v=BLvYFXoP33o. Es müssen FS und ODR vor dem Beginn der Übertragung eingestellt werden. Da der Beschleunigungssensor und das Gyroskop ihre ODR teilen, muss diese den gleichen Wert wie bei der Gyroskop-Kalibrierung besitzen. -->
+            <info label="Das Magnetometer des Laborinos sollte kalibriert werden, um möglichst genaue Messwerte zu erhalten. Grundsätzlich kann das Magnetometer auch ohne Kalibrierung verwendet werden, allerdings treten dabei deutliche systematische Messfehler in der Größenordnung von bis zu 50% auf. Nach der kurzen Kalbrierung sind die gemessenen Magnetfeldstärken typischerweise auf etwa 5% genau. Die Daten der Kalibrierung werden dauerhaft auf dem Laborino gespeichert, sodass die Kalibrierung nur ein einziges Mal durchgeführt werden muss. Es ist jedoch zu beachten, dass die Kalibrierungsdaten überschrieben werden, wenn der Laborino z.B. bei einem Software-Update neu programmiert wird. Um nicht nach jedem Software Update den Laborino neu kalibrieren zu müssen, ist es seit der Laborino Software Version v2.0 möglich, sich mithilfe des Experiments &quot;Kalibrationsdaten&quot; die Werte der Kalibrierungen vor dem Software Update ausgeben zu lassen und in den Header der neuen Software Version (*.ino Datei) zu kopieren. Dadurch werden die Kalibrierungsdaten, die in der alten Software hinterlegt sind, in die neue Software übertragen. Eine Neukalibrierung nach dem Software Update ist dann nicht mehr nötig."/>
+            <info label=""/>
+            <info label="Kalibrierungs-Prozess:" bold="true"/>
+            <info label="Für die Kalibrierung sind einige manuelle Schritte nötig die im Folgenden beschrieben sind:"/>
+            <info label=""/>
+            <info label="1.) Starte das Experiment mit dem ► Button oben rechts in der Ecke. Damit springt der Status des Laborinos im Tab KALIBRIERUNG auf &quot;... bin bereit!&quot; um."/>
+            <info label=""/>
+            <info label="2.) Halte den Laborino während der gesamten folgenden Kalibrierungsmessung mindestens 1m entfernt von Magneten und großen, möglicherweise magnetisierten, metallischen Gegenständen. Diese können die Kalibrierungsmessung deutlich verfälschen, weil die Kalibrierungsmessung auf die Stärke des Erdmagnetfeldes normiert wird."/>
+            <info label=""/>
+            <info label="3.) Drücke im Tab KALIBRIERUNG auf den STARTE KALIBRIERUNG Button. Der Laborino misst nun das Magnetfeld und zeigt in der Tabelle die gemessenen Maximal- und Minimalwerte aller 3 Achsen in Echtzeit an. Während der Kalibrierungsmessung muss der Laborino einmal mit jeder der 6 Seiten des Gehäuses in Richtung des Erdmagnetfeldes zeigen. Das Erdmagnetfeld tritt in Deutschland mit einem Winkel von ca 60° bis 70° aus dem Boden aus und verläuft von Nord nach Süd."/>
+            <info label=""/>
+            <info label="4.) Wurde der Laborino mit allen 6 Seiten des Gehäuses entlang des Erdmagnetfeldes ausgerichtet, sodass sich die Maximal- und Minimalwerte nicht mehr nennenswert ändern, kann die Kalibrierungsmessung mit dem BEENDE KALIBRIERUNG Button beendet werden. Anschließend springt das Status auf &quot;... ist kalibriert!&quot; um und die Kalibrierung ist vollständig beendet."/>
+            <info label=""/>
+            <info label="5.) Herzlichen Glückwunsch! Das Magnetometer deines Laborinos ist kalibriert. Du kannst das Kalibrierungs-Experiment nun verlassen."/>
+            <info label=""/>
+            <info label="Hinweis:" bold="true"/>
+            <info label="Es ist nicht zwingend erforderlich den Laborino am Erdmagnetfeld zu kalibrieren. Grundsätzlich kann der Laborino auch auf ein beliebiges anderes homogenes Magnetfeld mit bekannter Stärke kalibriert werden. Dazu muss nur im Feld &quot;Stärke des Kalibrier-Magnetfeldes&quot; die bekannte Magnetfeldstärke eingetragen werden. Weil jedoch selten die genaue Magnetfeldstärke bekannt ist, bietet sich die Kalibrierung am Erdmagnetfeld an."/>
+        </view>
+        <view label="Kalibrierung">
+            <info label="Stärke des Kalibrations-Magnetfeldes:" bold="true"/>
+            <info label="Gib hier die Magnetfeldstärke an, mit der das Magnetometer kalibiert wird. Die Stärke des Erdmagnetfeldes in Mitteleuropa beträgt ungefähr 49µT."/>
+            <info label=""/>
+            <edit label="µT: " signed="false" min="0" max="10000" default="49">
+                <output>MAGVAL</output>
+            </edit>
+            <info label=""/>
+            <info label="Messwerte:" bold="true"/>
+            <value label="X-Max:">
+                <input>MAX</input>
+            </value>
+            <value label="X-Min:">
+                <input>MIX</input>
+            </value>
+            <value label="Y-Max:">
+                <input>MAY</input>
+            </value>
+            <value label="Y-Min:">
+                <input>MIY</input>
+            </value>
+            <value label="Z-Max:">
+                <input>MAZ</input>
+            </value>
+            <value label="Z-Min:">
+                <input>MIZ</input>
+            </value>
+            <info label=""/>
+            <button label="Starte Kalibrierung">
+                <input type="value">1</input>
+                <output>BUTTONSTATE1</output>
+            </button>
+            <info label=""/>
+            <button label="Beende Kalibrierung">
+                <input type="value">1</input>
+                <output>BUTTONSTATE2</output>
+            </button>
+            <info label=""/>
+            <info label="Status des Laborinos:" bold="true"/>
+            <info label=""/>
+            <value label="Dein Laborino">
+                <input>STATE</input>
+                <map max="-1">wartet auf den Start...</map>
+                <map max="0">ist bereit!</map>
+                <map max="1">misst gerade...</map>
+                <map max="2">ist kalibriert!</map>
+            </value>
+            <info label=""/>
+            <value label="Und jetzt?">
+                <input>STATE</input>
+                <map max="-1">Starte das Experiment mit dem ► Button oben rechts in der Ecke.</map>
+                <map max="0">Halte den Laborino mindestens 1m von Magneten und magnetisierten Metallen entfernt und starte die Kalibrierungsmessung mit dem STARTE KALIBRIERUNG Button.</map>
+                <map max="1">Richte alle 6 Seiten des Laborino Gehäuses einmal senkrecht zum Kalibrationsmagnetfeld aus.</map>
+                <map max="2">Du kannst das phyphox Experiment nun verlassen.</map>
+            </value>
+        </view>
+    </views>
+    <export>
+        <set name="Raw data">
+        </set>
+    </export>
+</phyphox>

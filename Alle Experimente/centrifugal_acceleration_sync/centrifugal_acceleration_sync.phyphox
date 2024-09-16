@@ -1,0 +1,129 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Zentrifugalbeschleunigung</title>
+    <category>Laborino-Experimente</category>
+    <description>Das Experiment misst die Zentrifugalbeschleunigung in einem rotierenden Bezugssystem. Dabei orientiert es sich an der Winkelgeschwindigkeit der Y-Achse und der Beschleunigung der Z-Achse.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+
+        <!-- DATA                                               -->
+        <container size="0" >TIME</container>
+        <container size="0" >ACCZ</container>
+        <container size="0" >GYRY</container>
+
+        <!-- CALCULATIONS                                       -->
+        <container size="0" >OMEGA_Y</container>
+        <container size="0" >OMEGA_Y_POT_TWO</container>
+
+        <!-- CALCULATE HELPER                                   -->
+        <container size="0" >GYRY_CAL</container>
+        <container size="1" init="0">LAST_IND</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="da1a0002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">GYRY</output>
+            <output char="da1a0002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">ACCZ</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">32</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">ACCZ</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">GYRY</output>
+        </if>
+
+        <!-- ================================================== -->
+        <!-- CALCULATIONS                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS                    -->
+        <subrange>
+            <input as="from">LAST_IND</input>
+            <input keep="true">GYRY</input>
+            <output>GYRY_CAL</output>
+        </subrange>
+
+        <!-- SET CURRENT INDEX AS LAST INDEX                    -->
+        <count>
+            <input keep="true">TIME</input>
+            <output>LAST_IND</output>
+        </count>
+
+        <!-- CALCULATE THE ANGLE VELOCITIES IN RAD/S; ABOLUTE VALUE OF THE ANGLE VELOCITY AND THE CORRESPONDING FREQUENCIES: -->
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">GYRY_CAL</input>
+            <output append="true">OMEGA_Y</output>
+        </formula>
+
+        <formula formula="2*3.14159265359*([1_]^2)/360">
+            <input keep="true">GYRY_CAL</input>
+            <output append="true">OMEGA_Y_POT_TWO</output>
+        </formula>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment misst gleichzeitig die Beschleunigung und die Winkelgeschwindigkeit des Laborinos. Aus der Beschleunigung zu verschiedenen Winkelgeschwindigkeiten lässt sich zeigen, dass die Zentrifugalbeschleunigung quadratisch von der Winkelgeschwindigkeit abhängt. Stelle den Laborino dazu aufrecht in eine Schleuder oder Zentrifuge, sodass er sich um die Y-Achse dreht und die Zentrifugalbeschleunigung entlang der Z-Achse wirkt."/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="Im Tab LIVE werden die die aktuellen Messdaten in Echtzeit angezeigt. Mit dem GRAPH Tab kannst du dir alle gemessenen Beschleunigungen und Winkelgeschwindigkeiten über der Zeit auftragen lassen. In dem Tab ZENTRIFUGALBESCHLEUNIGUNG wird die Beschleunigung über der Winkelgeschwindigkeit aufgetragen, um den quadratischen Zusamenhang von der Winkelgeschwindigkeit sichtbar zu machen."/>
+        </view>
+        <view label="Zentrifugalbeschleunigung 1">
+            <info label="Zentrifugalbeschleunigung:"  bold="true"/>
+            <info label="Die folgenden Graphik stellt die gemessene Winkelgeschwindigkeit ω_y auf der X-Achse und die gemessene Beschleunigung a_z auf der Y-Achse dar. Da die Zentrifugalbeschleunigung quadratisch von der Winkelgeschwindigkeit abhängt, bildet sich durch das Drehen der Schleuder bei unterschiedlichen Geschwindigkeiten eine Parabel."/>
+            <info label="                                   a_z=r*ω²" bold="true"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true"  labelX="Winkelgeschwindigkeit ω_y" labelY="Zentrifugalbeschleunigung a_z" unitX="rad/s" unitY="m/s²" xPrecision="3" yPrecision="3">
+                <input axis="x">OMEGA_Y</input>
+                <input axis="y">ACCZ</input>
+            </graph>
+        </view>
+        <view label="Zentrifugalbeschleunigung 2">
+            <info label="Zentrifugalbeschleunigung:"  bold="true"/>
+            <info label="Die folgenden Graphik stellt das Quadrat der gemessenen Winkelgeschwindigkeit ω_y auf der X-Achse und die gemessene Beschleunigung a_z auf der Y-Achse dar."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true"  labelX="Winkelgeschwindigkeit ω²_y" labelY="Zentrifugalbeschleunigung a_z" unitX="rad²/s" unitY="m/s²" xPrecision="3" yPrecision="3">
+                <input axis="x">OMEGA_Y_POT_TWO</input> 
+                <input axis="y">ACCZ</input>
+            </graph>
+        </view>
+    </views>
+    <export>
+      <set name="Winkelgeschwindigkeit">
+          <data name="Zeit">TIME</data>
+          <data name="Y-Winkelgeschwindigkeit in rad/s">OMEGA_Y</data>
+          <data name="Quadrat Y-Winkelgeschwindigkeit in rad/s">OMEGA_Y_POT_TWO</data>
+          <data name="Z-Beschleunigung in m/s²">ACCZ</data>
+      </set>
+    </export>
+</phyphox>

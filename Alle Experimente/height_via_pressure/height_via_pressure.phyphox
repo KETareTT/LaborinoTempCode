@@ -1,0 +1,398 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Höhe via Luftdruck</title>
+    <category>Laborino-Experimente</category>
+    <description>Das Experiment misst den Luftdruck am Laborino und berechnet daraus die Höhe über dem Meeresspiegel oder einem Referenzpunkt.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0">BT_INC</container>
+        <container size="1" init="1">BT_OUTC</container>
+
+        <!-- DATA                                               -->
+        <container size="0">TIME</container>
+        <container size="0">PRESS_RAW</container>
+        
+        <!-- CALCULATIONS                                       -->
+        <container size="0">PRESS_AVG</container>
+        <container size="0">TIME_FOR_AVG</container>
+
+        <!-- CONTAINERS FOR ABSOLUTE HEIGHT                     -->
+        <container size="0">ABS_BAR_H_FROM_RAW_P</container>
+        <container size="0">ABS_BAR_H_FROM_MOV_AVG_P</container>
+
+        <!-- CONTAINERS FOR RELATIVE HEIGHT                     -->
+        <container size="1">BAR_H_REF</container>
+        <container size="1">STD_BAR_H_REF</container>
+        <container size="0">REL_BAR_H_FROM_RAW_P</container>
+        <container size="0">REL_BAR_H_FROM_MOV_AVG_P</container>
+
+        <!-- CALCULATION HELPER                                 -->
+        <!-- CONSTANTS                                          -->
+        <container size="1" static="true" init="8.314">R</container>
+        <container size="1" static="true" init="9.81">g</container>
+        <container size="1" static="true" init="0.02896">M</container>
+        <container size="1" static="true" init="0.0065">DT_DH</container>
+        <container size="1" static="true" init="1.235">KAPPA</container>
+        <container size="1">P_0</container>
+        <container size="1">T_0</container>
+        <container size="1">AVG_WIDTH</container>
+        <container size="1">AVG_WIDTH_MINUS1</container>
+        <container size="1">AVG_WIDTH_HALF</container>
+
+        <!-- CALCULATION BUFFER                                 -->
+        <container size="0">PRESS_RAW_CALC</container>
+        <container size="0">PRESS_AVG_CALC</container>
+        <container size="0">PRESS_AVG_SUB</container>
+        <container size="0">TIME_CAL</container>
+
+        <!-- LEN/INDEXES                                        -->
+        <container size="1">RAW_DATA_LEN</container>
+        <container size="1">LAST_CALC_DATA_LEN</container>
+        <container size="1">START_IND_AVG</container>
+
+        <!-- CONTAINERS FOR RELATIVE HEIGHT CALCULATION:        -->
+        <container size="0">P_SUB_REF</container>
+        <container size="1">P_REF</container>
+        <container size="1">STD_P_REF</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">PRESS_RAW</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">11</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">PRESS_RAW</output>
+        </if>
+        <!-- ================================================== -->
+        <!-- CALCULATIONS                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS (RAW_DATA_LEN = LAST_IND) -->
+        <subrange>
+            <input as="from">RAW_DATA_LEN</input>
+            <input keep="true">PRESS_RAW</input>
+            <input keep="true">TIME</input>
+            <output>PRESS_RAW_CALC</output>
+            <output>TIME_CAL</output>
+        </subrange>
+
+        <!-- REMEMBER AMOUNT OF RAW DATAPOINTS AS STARTINDEX FOR NEXT CYCLUS  -->
+        <count>
+            <input keep="true">PRESS_RAW</input>
+            <output>RAW_DATA_LEN</output>
+        </count>
+
+        <divide>
+            <input keep="true">AVG_WIDTH</input>
+            <input type="value">2</input>
+            <output>AVG_WIDTH_HALF</output>
+        </divide>
+
+        <if equal="true" greater="true">
+            <input as="a" keep="true">RAW_DATA_LEN</input>
+            <input as="b" keep="true">AVG_WIDTH_HALF</input>
+            <input as="true" keep="true">TIME_CAL</input>
+            <output append="true">TIME_FOR_AVG</output>
+        </if>
+
+        <!-- REMEMBER AMOUNT OF NEW DATAPOINTS FOR NEXT AVG     -->
+        <count>
+            <input keep="true">PRESS_RAW_CALC</input>
+            <output>LAST_CALC_DATA_LEN</output>
+        </count>
+
+        <!-- ================================================== -->
+        <!-- CALCULATE MOVING AVERAGE OF THE PRESSURE           -->
+        <!-- ================================================== -->
+        <!-- HIER ERKLAERUNG: STARTINDEX WIRD VON NEUEN DATEN GENOMMEN, SOMIT SIND CALC BUFFER NICHT VERWENDBAR. UM TROTZDEM ALLE DATEN ZU HABEN, WIRD EIN AVG FUER ALLE DATEN DES LETZTEN CYCLUS BERECHNET, NICHT DIE DES MOMENTANEN -->
+        <!-- CALCULATE INDEX TO START FROM                      -->
+        <!-- AVG_WIDTH = 3, LAST_CALC_DATA_LEN = 2               -->
+        <!-- [0,1,2,3,4,5,6,7] -> START_IND_AVG = 8-(3+2)+1 = 4 -->
+        <formula formula="[1]-([2]+[3])+1">
+            <input keep="true">RAW_DATA_LEN</input>
+            <input keep="true">AVG_WIDTH</input>
+            <input keep="true">LAST_CALC_DATA_LEN</input>
+            <output>START_IND_AVG</output>
+        </formula>
+
+        <!-- MAKE SURE THERE IS ENOUGH DATA                     -->
+        <if less="true" equal="true">
+            <input as="a" keep="true">RAW_DATA_LEN</input>
+            <input as="b" keep="true">AVG_WIDTH</input>
+            <input as="true" type="value">0</input>
+            <input as="false">START_IND_AVG</input>
+            <output>START_IND_AVG</output>
+        </if>
+
+        <!-- GET DATAPOINTS FOR AVG CALCULATION                 -->
+        <!-- [0,1,2,3,4,5,6,7] -> [4,5,6,7]                     -->
+        <subrange>
+            <input as="from" keep="true">START_IND_AVG</input>
+            <input keep="true">PRESS_RAW</input>
+            <output>PRESS_AVG_SUB</output>
+        </subrange>
+
+        <!-- USE MINUS1 SINCE movingaverage USES WIDTH+1        -->
+        <subtract>
+            <input keep="true">AVG_WIDTH</input>
+            <input type="value">1</input>
+            <output>AVG_WIDTH_MINUS1</output>
+        </subtract>
+
+        <!-- CALCULATE MOVING AVERAGE FOR NEW DATAPOINTS        -->
+        <!-- [4,5,6,7] -> [AVG(4,5,6), AVG(5,6,7)] = [5,6]      -->
+        <movingaverage dropIncomplete="true">
+            <input as="data">PRESS_AVG_SUB</input>
+            <input as="width" keep="true">AVG_WIDTH_MINUS1</input>
+            <output>PRESS_AVG_CALC</output>
+        </movingaverage>
+
+        <!-- APPEND AVG DATAPOINTS TO BUFFER                    -->
+        <append>
+            <input>PRESS_AVG</input>
+            <input keep="true">PRESS_AVG_CALC</input>
+            <output>PRESS_AVG</output>
+        </append>
+        <!-- ================================================== -->
+        <!-- END CALCULATE MOVING AVERAGE OF THE PRESSURE       -->
+        <!-- ================================================== -->
+
+        <!-- CALCULATE ABSOLUTE BAROMETRIC HEIGHT FROM RAW PRESSURE AND MOVING AVERAGE PRESSURE: -->
+        <formula formula="-[1]*[2]/([3]*[4])*log([5_]/[6])">
+            <input keep="true">R</input>
+            <input keep="true">T_0</input>
+            <input keep="true">M</input>
+            <input keep="true">g</input>
+            <input keep="true">PRESS_RAW_CALC</input>
+            <input keep="true">P_0</input>
+            <output append="true">ABS_BAR_H_FROM_RAW_P</output>
+        </formula>
+        <formula formula="-[1]*[2]/([3]*[4])*log([5_]/[6])">
+            <input keep="true">R</input>
+            <input keep="true">T_0</input>
+            <input keep="true">M</input>
+            <input keep="true">g</input>
+            <input keep="true">PRESS_AVG_CALC</input>
+            <input keep="true">P_0</input>
+            <output append="true">ABS_BAR_H_FROM_MOV_AVG_P</output>
+        </formula>
+
+        <!-- ================================================== -->
+        <!-- CALCULATE START HEIGHT                             -->
+        <!-- ================================================== -->
+        <!-- CALCULATE START PRESSURE                           -->
+        <subrange>
+            <input as="from" type="value">0</input>
+            <input as="length" keep="true">AVG_WIDTH</input>
+            <input keep="true">PRESS_RAW</input>
+            <output>P_SUB_REF</output>
+        </subrange>
+        <average>
+            <input keep="true">P_SUB_REF</input>
+            <output as="average">P_REF</output>
+            <output as="stddev">STD_P_REF</output>
+        </average>
+
+        <!-- CALCULATE START HEIGHTS                            -->
+        <formula formula="-[1]*[2]/([3]*[4])*log([5]/[6])">
+            <input keep="true">R</input>
+            <input keep="true">T_0</input>
+            <input keep="true">M</input>
+            <input keep="true">g</input>
+            <input keep="true">P_REF</input>
+            <input keep="true">P_0</input>
+            <output>BAR_H_REF</output>
+        </formula>
+        <formula formula="[1]*[2]/([3]*[4]*[5])*[6]">
+            <input keep="true">R</input>
+            <input keep="true">T_0</input>
+            <input keep="true">M</input>
+            <input keep="true">g</input>
+            <input keep="true">P_REF</input>
+            <input keep="true">STD_P_REF</input>
+            <output>STD_BAR_H_REF</output>
+        </formula>
+
+        <!-- CALCULATE RELATIVE HEIGHTS -->
+        <subtract>
+            <input keep="true">ABS_BAR_H_FROM_RAW_P</input>
+            <input keep="true">BAR_H_REF</input>
+            <output>REL_BAR_H_FROM_RAW_P</output>
+        </subtract>
+        <subtract>
+            <input keep="true">ABS_BAR_H_FROM_MOV_AVG_P</input>
+            <input keep="true">BAR_H_REF</input>
+            <output>REL_BAR_H_FROM_MOV_AVG_P</output>
+        </subtract>
+        <!-- ================================================== -->
+        <!-- END CALCULATE START HEIGHT                         -->
+        <!-- ================================================== -->
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest den Luftdrucksensor des Laborinos aus und berechnet daraus die Höhe über dem Meerespiegel oder bezüglich eines anderen Nullpunktes. Damit kannst du zum Beispiel ermitteln wie hoch du einen Ball werfen kannst."/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="In dem Tab LUFTDRUCK werden dir die Messdaten des Luftdrucksensors angezeigt. Daraus wird schließlich in dem Tab ABSOLUTE HÖHE die Höhe über dem Meeresspiegel ermittelt. In dem Tab RELATIVE HÖHE wird am Anfang eine Referenzhöhe gemessen und anschließend die Höhendifferenz zu dieser Höhe berechnet. In dem Tab EINSTELLUNGEN kannst du einige Parameter der Messung und Höhenberechnung verändern."/>
+            <info label=""/>
+            <info label="Die Druckmessung weist eine relativ hohe Unsicherheit von typischerweise etwa 4Pa oder ca. 40cm in der Höhe auf. Daher werden alle Messwerte einmal als Rohdaten und einmal als gleitender Mittelwert dargestellt. Beim gleitenden Mittelwert wird der aktuelle Wert aus dem Mittelwert der umliegenden 16 Messwerte (~vorherige 8, kommende 8)  bzw. ~0.5 Sekunden berechnet. Dies erhöht die Genauigkeit auf etwa 10cm. In dem Tab EINSTELLUNGEN kann zusätzlich die Anzahl der Messwerte N, über die gemittelt wird, verändert werden, sodass prinzipiell eine beliebig genaue Höhenmessung möglich ist."/>
+        </view>
+        <view label="Luftdruck">
+            <info label="Luftdruck:"  bold="true"/>
+            <info label="In dem folgenden Graphen ist der gemessene Luftdruck über der Zeit dargestellt. Die ungemittelten Rohdaten des Luftdrucksensors sind in grau, der gleitende Mittelwert ist in weiß eingezeichnet."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.5" style="lines" lineWidth="1.5" color="7f7f7f" partialUpdate="true" labelX="Zeit" labelY="Druck" unitX="s" unitY="hPa" xPrecision="4" yPrecision="6">
+                <input axis="x" color="ffffff">TIME_FOR_AVG</input>
+                <input axis="y">PRESS_AVG</input>
+                <input axis="x" color="7f7f7f">TIME</input>
+                <input axis="y">PRESS_RAW</input>
+            </graph>
+            <info label=""/>
+            <info label="Der aktuell gemessene Luftdruck am Luftdrucksensor des Laborinos beträgt"/>
+            <info label=""/>
+            <value label="p =" unit="hPa" color="7f7f7f">
+                <input>PRESS_RAW</input>
+            </value>
+            <info label=""/>
+            <info label="Der gleitende Mittelwert über die letzten"/>
+            <info label=""/>
+            <value label="N =" precision="0" unit="Messwerte" color="ffffff">
+                <input>AVG_WIDTH</input>
+            </value>
+            <info label=""/>
+            <info label="ergibt einen mittleren Luftdruck von"/>
+            <info label=""/>
+            <value label="p̅ =" precision="3" unit="hPa" color="ffffff">
+                <input>PRESS_AVG</input>
+            </value>
+            <info label=""/>
+        </view>
+        <view label="Absolute Höhe">
+            <info label="Absolute Höhe:"  bold="true"/>
+            <info label="Aus dem Luftdruck lässt sich nun mithilfe der"/>
+            <info label=""/>
+            <info label="barometrischen Höhenformel" align="center" bold="true"/>
+            <info label="p(h) = p_0⋅exp(-M⋅g⋅h/R⋅T_0)" align="center"/>
+            <info label=""/>
+            <info label="die Höhe über dem Meerespiegel berechnet. Darin ist p_0 der Luftdruck und T_0 die Tempertur auf Meereshöhe, M=28.96g/mol die mittlere molare Masse der Erdatmosphare, g=9,81m/s² die Erdbeschneunigung und R=8,314J/(K⋅mol) die universelle Gaskosntante. Weil die barometrische Höhenformel von einer konstanten Temperatur (T)  unabhängig von der Höhe (h) ausgeht ist, sie nur in geringen Höhen zuverlässig anwendbar. Ab einer Höhe von wenigen 100m nimmt die Lufttemperatur (T) zunehmend ab und die Annahme einer konstanten Lufttemperatur ist nicht mehr gegeben."/>
+            <info label=""/>
+            <info label="In den folgenden Graphen ist die berechnete absolute Höhe nach barometrischer Höhenformel über der Zeit dargestellt."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.5" style="lines" lineWidth="1.5" color="7f7f7f" partialUpdate="true" labelX="Zeit" labelY="Höhe" unitX="s" unitY="m" xPrecision="3" yPrecision="3">
+                <input axis="x" color="ffffff">TIME_FOR_AVG</input>
+                <input axis="y">ABS_BAR_H_FROM_MOV_AVG_P</input>
+                <input axis="x" color="7f7f7f">TIME</input>
+                <input axis="y">ABS_BAR_H_FROM_RAW_P</input>
+            </graph>
+            <info label=""/>
+            <info label="Die aktuell berechnete absolute Höhe nach barometrischer Höhenformel auf Basis der Messwerte beträgt"/>
+            <info label=""/>
+            <value label="h(p) =" precision="1" unit="m" color="ffffff">
+                <input>ABS_BAR_H_FROM_RAW_P</input>
+            </value>
+            <info label=""/>
+            <info label="Der gleitende Mittelwert über die letzten"/>
+            <info label=""/>
+            <value label="N =" precision="0" unit="Messwerte" color="ffffff">
+                <input>AVG_WIDTH</input>
+            </value>
+            <info label=""/>
+            <info label="ergibt eine mittlere Höhe von"/>
+            <info label=""/>
+            <value label="h̅ =" unit="m">
+                <input>ABS_BAR_H_FROM_MOV_AVG_P</input>
+            </value>
+            <info label=""/>
+            <info label="Bitte beachte:" bold="true"/>
+            <info label="Streng genommen ist die absolute Höhenbestimmung nach der barometrischen Höhenformel nur für einen Luftdruck auf Meereshöhe (p_0) von 1013,25hPa und eine Tempertur auf Meereshöhe (T_0) von 288.15K (bzw. 15°C) genau. Aufgrund der lokalen und temporären Luftdruckverhältnisse wie Hoch- und Tiefdruckgebiete sowie der aktuellen Luftemperatur können durchaus Abweichungen in der absoluten Höhenbestimmung von bis zu ±200m auftreten. Die relativen Änderungen in der gemessenen Höhe sind hingegen bis auf die angegebenen Unsicherheiten von unter 1m genau. Ist der aktuelle lokale Luftdruck auf Meereshöhe (p_0) und die Tempertur auf Meereshöhe (T_0) z.B. aus dem Internet bekannt, können die Werte im Tab EINSTELLUNGEN eingetragen werden und die Genauigkeit der absoluten Höhenbestimmung auf ca. ±20m verbessert werden!"/>
+        </view>
+        <view label="Relative Höhe">
+            <info label="Relative Höhe:"  bold="true"/>
+            <info label="In den meisten Fällen ist die absolute Höhe über dem Meeresspiegel gar nicht nötig. Oft reicht es vollkommen aus, wenn die Höhe gegenüber einer Referenzhöhe gemessen werden kann. In diesem Tab wird zu Beginn der Messung eine Referenzhöhe ermittelt und anschließend die Höhe im Bezug auf die Starthöhe gemessen."/>
+            <info label=""/>
+            <info label="In den folgenden Graphen ist die berechnete relative Höhe nach barometrischer Höhenformel über der Zeit dargestellt. Die Höhe wird in diesem Fall bezüglich der Höhenposition zu Beginn der Messung ermittelt."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.5" style="lines" lineWidth="1.5" color="7f7f7f" partialUpdate="true" labelX="Zeit" labelY="Höhe" unitX="s" unitY="m" xPrecision="3" yPrecision="3">
+                <input axis="x" color="ffffff">TIME_FOR_AVG</input>
+                <input axis="y">REL_BAR_H_FROM_MOV_AVG_P</input>
+                <input axis="x" color="7f7f7f">TIME</input>
+                <input axis="y">REL_BAR_H_FROM_RAW_P</input>
+            </graph>
+            <info label=""/>
+            <info label="Die aktuell berechnete absolute Höhe nach barometrischer Höhenformel auf Basis der Messwerte beträgt"/>
+            <info label=""/>
+            <value label="h(p) =" precision="1" unit="m" color="ffffff">
+                <input>REL_BAR_H_FROM_RAW_P</input>
+            </value>
+            <info label=""/>
+            <info label="Der gleitende Mittelwert über die letzten"/>
+            <info label=""/>
+            <value label="N =" precision="0" unit="Messwerte" color="ffffff">
+                <input>AVG_WIDTH</input>
+            </value>
+            <info label=""/>
+            <info label="ergibt eine mittlere Höhe von"/>
+            <info label=""/>
+            <value label="h̅ =" unit="m">
+                <input>REL_BAR_H_FROM_MOV_AVG_P</input>
+            </value>
+        </view>
+        <view label="Einstellungen">
+            <info label="Gleitender Mittelwert:" bold="true"/>
+            <info label="In dem folgenden Feld kannst du die Anzahl der Messwerte (N) auswählen, über die laufend gemittelt wird. Dabei wird ständig der Mittelwert der umliegenden N Messwerte gebildet. Für dynamische Höhenänderungen wie z.B. beim Werfen hat sich eine Mittellung über N=16 Messwerte als guter Kompromiss herausgestellt."/>
+            <info label=""/>
+            <edit label="N =" signed="false" decimal="false" min="2" max="10000"  default="16" unit="Messwerte">
+            <output>AVG_WIDTH</output>
+            </edit>
+            <info label="Luftdruck und Temperatur auf Meereshöhe:" bold="true"/>
+            <info label="In den folgenden Feldern kannst du den aktuellen und lokalen Luftdruck auf Meereshöhe (p_0) sowie die aktuelle und lokale Tempertur auf Meereshöhe (T_0) eintragen. Beide Werte können zum Beispiel von einer nahe gelegenen Wetterstation oder aus dem Internet ermittelt werden. Bedenke, dass die Temperatur in K und nicht in °C angegeben werden muss."/>
+            <info label=""/>
+            <edit label="p_0 =" signed="false" decimal="true" min="900" max="1100"  default="1013.25" unit="hPa">
+                <output>P_0</output>
+            </edit>
+            <edit label="T_0 =" signed="false" decimal="true" min="200" max="400"  default="288.15" unit="K">
+                <output>T_0</output>
+            </edit>
+            <info label=""/>
+            <info label="Bitte beachte:" bold="true"  color="red"/>
+            <info label="Eine Änderung der Einstellungen ist während den Messungen möglich, es wird aber geraten die Einstellungen stattdessen zwischen den Messungen zu verändern. Lösche dafür zunächst die aktuellen Messdaten, nehme die Änderungen an den Einstellungen vor und starte dann die Messung neu." color="red"/>
+        </view>
+    </views>
+    <export>
+        <set name="Höhe via Luftdruck">
+            <data name="Zeit in s">TIME</data>
+            <data name="Luftdruck (Rohdaten) in hPa">PRESS_RAW</data>
+            <data name="Absolute barometrische Höhe (Rohdaten) in m">ABS_BAR_H_FROM_RAW_P</data>
+            <data name="Relative barometrische Höhe (Rohdaten) in m">REL_BAR_H_FROM_RAW_P</data>
+            <data name="Laufender Mittelwert des Drucks in hPa">PRESS_AVG</data>
+            <data name="Laufender Mittelwert der absoluten barometrischen Höhe in m">ABS_BAR_H_FROM_MOV_AVG_P</data>
+            <data name="Laufender Mittelwert der relativen barometrischen Höhe in m">REL_BAR_H_FROM_MOV_AVG_P</data>
+        </set>
+    </export>
+</phyphox>

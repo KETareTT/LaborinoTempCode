@@ -1,0 +1,168 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Beschleunigung</title>
+    <category>Laborino-Experimente</category>
+    <description>Dieses Experiment misst in Echtzeit die Beschleunigung 𝑎 in x-, y- und z-Richtung und trägt den Betrag sowie die Komponenten aller 3 Raumrichtungen in Graphen über der Zeit auf.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+
+        <!-- DATA                                               -->
+        <container size="0" >TIME</container>
+        <container size="0" >X</container>
+        <container size="0" >Y</container>
+        <container size="0" >Z</container>
+
+        <!-- CALCULATIONS                                       -->
+        <container size="0" >ABS</container>
+
+        <!-- CALCULATE HELPER                                   -->
+        <container size="0" >X_CAL</container>
+        <container size="0" >Y_CAL</container>
+        <container size="0" >Z_CAL</container>
+        <container size="1" init="0">LAST_IND</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">X</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">Y</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="12">Z</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">4</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">X</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Y</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Z</output>
+        </if>
+
+        <!-- ================================================== -->
+        <!-- CALCULATIONS                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS                    -->
+        <subrange>
+            <input as="from">LAST_IND</input>
+            <input keep="true">X</input>
+            <input keep="true">Y</input>
+            <input keep="true">Z</input>
+            <output>X_CAL</output>
+            <output>Y_CAL</output>
+            <output>Z_CAL</output>
+        </subrange>
+
+        <!-- SET CURRENT INDEX AS LAST INDEX                    -->
+        <count>
+            <input keep="true">TIME</input>
+            <output>LAST_IND</output>
+        </count>
+
+        <!-- CALCULATE THE ABSOLUTE VALUE OF THE ACCELERATION   -->
+        <formula formula="sqrt([1_]^2+[2_]^2+[3_]^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">ABS</output>
+        </formula>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest den Beschleunigungssensor des Laborinos in Echtzeit aus. Befindet sich der Laborino in Ruhe oder bewegt sich gleichmäßig, so wirkt auf ihn nur die Erdbeschleunigung von etwa 9,81m/s². Wenn du ihn schüttelst, wirkt auf ihn noch eine weitere Beschleunigung. Wenn du ihn in die Luft wirfst, befindet er sich im freien Fall und es wirkt keine Beschleunigung auf ihn."/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="Im Tab LIVE werden die aktuellen Messdaten in Echtzeit angezeigt. Mit dem Tab GRAPH kannst du dir alle gemessenen Beschleunigungen über der Zeit auftragen lassen."/>
+        </view>
+        <view label="Live">
+            <info label=""/>
+            <info label="Betrag der Beschleunigung:"  bold="true"/>
+            <info label="Der Betrag des Beschleunigungsvektors  |𝑎⃗| gibt die Gesamtbeschleunigung unabhängig von der Raumrichtung an."/>
+            <info label=""/>
+            <value label="|𝑎⃗| =" unit="m/s²" >
+                <input>ABS</input>
+            </value>
+            <info label=""/>
+            <info label="Komponenten der Beschleunigung:"  bold="true"/>
+            <info label="Die folgenden 3 Messwerte geben die Beschleunigung 𝑎 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <value label="𝑎ₓ    =" unit="m/s²" color="red">
+                <input>X</input>
+            </value>
+            <value label="𝑎ᵧ    =" unit="m/s²" color="green">
+                <input>Y</input>
+            </value>
+            <value label="𝑎₂    =" unit="m/s²" color="blue">
+                <input>Z</input>
+            </value>
+        </view>
+        <view label="Graph">
+            <info label="Betrag der Beschleunigung:"  bold="true"/>
+            <info label="Der Betrag des Beschleunigungsvektors |𝑎⃗| gibt die Gesamtbeschleunigung unabhängig von der Raumrichtung an."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="Beschleunigung 𝑎" unitX="s" unitY="m/s²" xPrecision="3" yPrecision="3">
+                <input axis="x">TIME</input>
+                <input axis="y">ABS</input>
+            </graph>
+            <info label=""/>
+            <info label="Komponenten der Beschleunigung:"  bold="true"/>
+            <info label="Die folgenden 3 Graphen geben die Beschleunigung 𝑎 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Richtungen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1" color="ff7e22" partialUpdate="true" labelX="Zeit 𝑡" labelY="Beschleunigung 𝑎" unitX="s" unitY="m/s²" xPrecision="3" yPrecision="3">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">X</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">Y</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">Z</input>
+            </graph>
+        </view>
+    </views>
+    <export>
+        <set name="Beschleunigung">
+            <data name="Zeit t in s">TIME</data>
+            <data name="Betrag der Beschleunigung |a| in m/s²">ABS</data>
+            <data name="X-Beschleunigung a_x in m/s²">X</data>
+            <data name="Y-Beschleunigung a_y in m/s²">Y</data>
+            <data name="Z-Beschleunigung a_z in m/s²">Z</data>
+        </set>
+    </export>
+</phyphox>

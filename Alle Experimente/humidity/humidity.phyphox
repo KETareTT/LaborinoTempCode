@@ -1,0 +1,81 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Luftfeuchtigkeit</title>
+    <category>Laborino-Experimente</category>
+    <description>Dieses Experiment misst in Echtzeit die relative Luftfeuchtigkeit 𝜑 und trägt die gemessenen Daten über der Zeit auf.</description>
+    <icon format="base64">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</icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+
+        <!-- DATA                                               -->
+        <container size="0" >TIME</container>
+        <container size="0" >HUMI</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">HUMI</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">15</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">HUMI</output>
+        </if>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest den eingebauten Luftfeuchtigkeitssensor des Laborinos in Echtzeit aus. Er kann die relative Luftfeuchtigkeit in einem Messbereich von 0% bis 100% mit einer Genauigkeit von ±1.5% messen. Bei 0% relativer Luftfeuchtigkeit ist die Luft absolut trocken, bei 100% ist die Luft mit Wasserdampf gesättigt. Wird der Luft dann noch mehr Wasser hinzugefügt fällt diese als Nebeltröpfchen aus. Grundsätzlich fühlen wir uns bei Luftfeuchtigkeiten von 40 - 60% wohl. Zu trockene Heizungsluft im Winter kann zum Beispiel die Schleimhäute reizen und das Ansteckungsrisiko erhöhen. Dauerhauft zu hohe Luftfeuchtigkeit begünstigt die Schimmelbildung. Weißt du wie hoch die relatie Luftfeuchtigkeit in deinem Zimmer ist?"/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="Im Tab LIVE werden die aktuellen Messdaten in Echtzeit angezeigt. Mit dem Tab GRAPH kannst du dir alle  Messdaten über die Zeit auftragen lassen."/>
+        </view>
+        <view label="Live">
+            <info label="Aktuelle relative Luftfeuchtigkeit:"  bold="true"/>
+            <info label="Der folgende Messwert gibt die aktuelle realtive Luftfeuchtigkeit 𝜑 in % wieder."/>
+            <info label=""/>
+            <value label="𝜑    =" unit="%">
+                <input>HUMI</input>
+            </value>
+        </view>
+        <view label="Graph">
+            <info label="Verlauf der Luftfeuchtigkeit:"  bold="true"/>
+            <info label="Der folgende Graph gibt den zeitlichen Verlauf der relativen Luftfeuchtigkeit 𝜑 seit Beginn der Messung wieder."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="rel. Luftfeuchtigkeit 𝜑" unitX="s" unitY="%" xPrecision="3" yPrecision="3">
+                <input axis="x">TIME</input>
+                <input axis="y">HUMI</input>
+            </graph>
+        </view>
+    </views>
+    <export>
+        <set name="Luftfeuchtigkeit">
+            <data name="Zeit t in s">TIME</data>
+            <data name="rel. Luftfeuchtigkeit φ in %">HUMI</data>
+        </set>
+    </export>
+</phyphox>

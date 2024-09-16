@@ -1,0 +1,104 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.7" editor:version="1.0" locale="">
+    <title>Kalibrationsdaten</title>
+    <category>Laborino-Kalibrierungen</category>
+    <color>fe005d</color>
+    <description>Dieses Experiment ermöglicht die Ausagbe und das Zurücksetzen der Kalibrationsdaten.</description>
+    <icon format="base64">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</icon>
+    <data-containers>
+        <container size="1" init="0">BT_INC</container>
+        <container size="1" init="1">BT_OUTC</container>
+
+        <container size="1" init="0">BUTTONSTATE1</container>
+        <container size="1" init="0">BUTTONSTATE2</container>
+        <container size="1" init="0">OUTPUTSTATE</container>
+        <container size="1" init="0">SAVESTATE</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" subscribeOnStart="false">
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="1">OUTPUTSTATE</output>
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="2">SAVESTATE</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense"  >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">125</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="1" conversion="uInt8">BUTTONSTATE1</input>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="2" conversion="uInt8">BUTTONSTATE2</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <if equal="true">
+            <input keep="true">OUTPUTSTATE</input>
+            <input type="value">2</input>
+            <input type="value">0</input>
+            <output>BUTTONSTATE1</output>
+        </if>
+        <if equal="true">
+            <input keep="true">SAVESTATE</input>
+            <input type="value">2</input>
+            <input type="value">0</input>
+            <output>BUTTONSTATE2</output>
+        </if>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment ermöglicht weitere Optionen zur Verwendung der Kalibrationsdaten. Im Tab SERIELLE AUSGABE können die Kalibrationsdaten in der Arduino IDE ausgegeben werden, um sie z.B. bei einem Software Update in die neue Softwareversion zu übertragen. Im Tab ZURÜCKSETZEN können die im Header der Laborino Software gespeicherten Kalibrationsdaten erneut für die Kalibrierung des Laborinos verwendet werden, für den Fall, dass sie ungewollt durch eine erneute Kalibrierung überschrieben wurden."/>
+            <info label=""/>
+            <info label="Mit dem ► Button oben rechts kannst du die Ausgabe starten. Das Papierkorb Symbol setzt das Experiment zurück und ermöglicht eine erneute Ausgabe. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen."/>
+            <info label=""/>
+        </view>
+        <view label="Serielle Ausgabe">
+            <info label="Dieser Tab ermöglicht die Ausgabe der Kalibrationsdaten über den seriellen (USB) Port des Arduinos. So können die Kalibrationsdaten an einen PC übertragen werden. Schließe dafür zunächst den Laborino per USB Kabel an den PC an, öffne die Arduino IDE und verbinde dich mit dem angeschlossenen Laborino. Öffne dann den seriellen Monitor der Arduino IDE. Drücke anschließend den KALIBRATIONSDATEN AUSGEBEN Button, woraufin die Kalibrationsdaten in dem seriellen Monitor der Arduino IDE angezeigt werden."/>
+            <info label=""/>
+            <button label="KALIBRATIONSDATEN AUSGEBEN">
+                <input type="value">1</input>
+                <output>BUTTONSTATE1</output>
+            </button>
+            <info label=""/>
+            <info label="Sollen die Kalibrationsdaten in eine neue Software Version übertragen werden, können diese aus dem seriellen Monitor in den dafür vorgesehenen Bereich im Header zu Beginn des Laborino Programmcodes kopiert werden. Denke daran, die gespeicherten Kalibrationsdaten anzupassen, wenn mehrere Laborinos nacheinander neu beschrieben werden sollen. Wird nach dem Software Update des Laborinos eine neue Kalibrierung durchgeführt, wird die neue Kalibrierung verwendet. Für den unwahrscheinlichen Fall, dass die neue Kalibrierung fehlerhaft ist und ungenauere Messwerte liefert als die alte Kalibrierung, können die alten Kalibrierdaten aus dem Programmheader erneut geladen werden. Dies ist im folgenden Tab ZURÜCKSETZEN möglich."/>
+            <info label=""/>
+            <info label="Status des Laborinos:" bold="true"/>
+            <info label=""/>
+            <value label="Dein Laborino">
+                <input>OUTPUTSTATE</input>
+                <map max="0">wartet auf den Start...</map>
+                <map max="1">ist bereit!</map>
+                <map max="2">bereitet die Daten vor...</map>
+                <map max="3">hat die Daten ausgegeben!</map>
+            </value>
+            <info label=""/>
+            <value label="Und jetzt?">
+                <input>OUTPUTSTATE</input>
+                <map max="0">Starte das Experiment mit dem ► Button oben rechts in der Ecke.</map>
+                <map max="1">Schließe den Laborino an den PC an, öffne die Arduino IDE, verbinde die IDE mit dem Laborino, öffne den Seriellen Monitor und drücke auf den KALIBRATIONSDATEN AUSGEBEN Button.</map>
+                <map max="2">Warte kurz...</map>
+                <map max="3">Du solltest nun die Kalibrationsdaten im Seriellen Monitor der Arduino IDE sehen.</map>
+            </value>
+        </view>
+        <view label="Zurücksetzen">
+            <info label="Dieses Experiment ermöglicht das erneute Setzen der im Programmheader gespeicherten Kalibrationswerte. Achtung! Alle Kalibrierungen seit dem letzten Software Update werden dabei unwiderruflich gelöscht!"/>
+            <info label=""/>
+            <button label="Speicher Kalibrationen">
+                <input type="value">1</input>
+                <output>BUTTONSTATE2</output>
+            </button>
+            <info label=""/>
+            <info label="Manchmal kann beim Setzen der Kalibrationswerte der Laborino abstürzen. Ein Neustart des Laborinos löst die Verbindungsprobleme."/>
+            <info label=""/>
+            <info label="Status des Laborinos:" bold="true"/>
+            <info label=""/>
+            <value label="Dein Laborino">
+                <input>SAVESTATE</input>
+                <map max="0">wartet auf den Start...</map>
+                <map max="1">ist bereit!</map>
+                <map max="2">bereitet den Reset vor...</map>
+                <map max="3">hat die Kalibrationsdaten zurückgesetzt!</map>
+                <map max="4">hat einen Fehler erkannt.</map>
+            </value>
+        </view>
+    </views>
+</phyphox>

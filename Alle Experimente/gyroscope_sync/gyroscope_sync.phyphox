@@ -1,0 +1,270 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Winkelgeschwindigkeit</title>
+    <category>Laborino-Experimente</category>
+    <description>Dieses Experiment misst in Echtzeit die Winkelgeschwindigkeit 𝜔 um die x-, y- und z-Achse und trägt den Betrag sowie die Komponenten aller 3 Achsen in Graphen über der Zeit auf.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+
+        <!-- DATA                                               -->
+        <container size="0" >TIME</container>
+        <container size="0" >X</container>
+        <container size="0" >Y</container>
+        <container size="0" >Z</container>
+
+        <!-- CALCULATIONS                                       -->
+        <container size="0" >ABS</container>
+        <container size="0" >OMEGA_X</container>
+        <container size="0" >OMEGA_Y</container>
+        <container size="0" >OMEGA_Z</container>
+        <container size="0" >OMEGA_ABS</container>
+        <container size="0" >F_X</container>
+        <container size="0" >F_Y</container>
+        <container size="0" >F_Z</container>
+        <container size="0" >F_ABS</container>
+
+        <!-- CALCULATE HELPER                                   -->
+        <container size="0" >X_CAL</container>
+        <container size="0" >Y_CAL</container>
+        <container size="0" >Z_CAL</container>
+        <container size="1" >LAST_IND</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">X</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">Y</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="12">Z</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">6</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">X</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Y</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Z</output>
+        </if>
+        <!-- ================================================== -->
+        <!-- CALCULATIONS                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS                    -->
+        <subrange>
+            <input as="from">LAST_IND</input>
+            <input keep="true">X</input>
+            <input keep="true">Y</input>
+            <input keep="true">Z</input>
+            <output>X_CAL</output>
+            <output>Y_CAL</output>
+            <output>Z_CAL</output>
+        </subrange>
+
+        <!-- SET CURRENT INDEX AS LAST INDEX                    -->
+        <count>
+            <input keep="true">TIME</input>
+            <output>LAST_IND</output>
+        </count>
+
+        <!-- CALCULATE THE ANGLE VELOCITIES IN RAD/S; ABOLUTE VALUE OF THE ANGLE
+        VELOCITY AND THE CORRESPONDING FREQUENCIES: -->
+        <formula formula="sqrt([1_]^2+[2_]^2+[3_]^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">ABS</output>
+        </formula>
+
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">X_CAL</input>
+            <output append="true">OMEGA_X</output>
+        </formula>
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">Y_CAL</input>
+            <output append="true">OMEGA_Y</output>
+        </formula>
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">Z_CAL</input>
+            <output append="true">OMEGA_Z</output>
+        </formula>
+        <!-- INSTEAD OF CALCULATING OMEGA AGAIN, THE BUFFERS OF OMEGA CAN BE CUT AGAIN VIA SUBRANGE AND CURR/LAST-INDEX AND THEN CALCULATED -->
+        <formula formula="sqrt((2*3.14159265359*[1_]/360)^2+(2*3.14159265359*[2_]/360)^2+(2*3.14159265359*[3_]/360)^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">OMEGA_ABS</output>
+        </formula>
+
+        <formula formula="[1_]/360">
+            <input keep="true">X_CAL</input>
+            <output append="true">F_X</output>
+        </formula>
+        <formula formula="[1_]/360">
+            <input keep="true">Y_CAL</input>
+            <output append="true">F_Y</output>
+        </formula>
+        <formula formula="[1_]/360">
+            <input keep="true">Z_CAL</input>
+            <output append="true">F_Z</output>
+        </formula>
+        <formula formula="sqrt(([1_]/360)^2+([2_]/360)^2+([3_]/360)^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">F_ABS</output>
+        </formula>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest das Gyroskop des Laborinos in Echtzeit aus. Ein Gyroskop misst die Winkelgeschwindigkeit des Laborinos. Das heißt, überall wo sich etwas dreht wie zum Beispiel bei Kreiseln, Zentrifugen, Pendeln oder fast allen Geräten, die mit Motoren laufen, können wir die Drehgeschwindigkeit messen."/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="Im Tab LIVE werden die aktuellen Messdaten in Echtzeit angezeigt. Mit dem Tab WINKELGESCHWINDIGKEIT kannst du dir alle gemessenen Winkelgeschwindigkeiten über der Zeit auftragen lassen. Im Tab FREQUENZ wird die Winkelgeschwindigkeit in die Rotationsfrequenz umgerechnet und graphisch dargestellt."/>
+        </view>
+        <view label="Live">
+            <info label="Betrag der Winkelgeschwindigkeit:"  bold="true"/>
+            <info label="Der Betrag des Winkelgeschwindigkeitsvektors |𝜔⃗| gibt die gesamte Winkelgeschwindigkeit unabhängig von der Raumrichtung an. Das Gyroskop gibt die Winkelgeschwindigkeit in °/s wieder."/>
+            <info label=""/>
+            <value label="|𝜔⃗|    =" unit="°/s" precision="1">
+                <input>ABS</input>
+            </value>
+            <info label=""/>
+            <info label="Für die meisten Gleichungen wird die Winkelgeschwindigkeit 𝜔 üblicherweise in Radianten pro Sekunde (rad/s) benötigt. Dabei entsprechen 2𝜋 rad/s genau einer Umdrehung pro Sekunde. Eine andere oft benötigte Einheit ist die Rotationsfrequenz 𝑓 in Umdrehungen pro Sekunde (Hz)."/>
+            <info label=""/>
+            <value label="|𝜔⃗|    =" unit="rad/s" precision="3">
+                <input>OMEGA_ABS</input>
+            </value>
+            <value label="𝑓    =" unit="Hz" precision="4">
+                <input>F_ABS</input>
+            </value>
+            <info label=""/>
+            <info label="Komponenten der Winkelgeschwindigkeit:"  bold="true"/>
+            <info label="Die folgenden 3 Messwerte geben die Winkelgeschwindigkeit 𝜔 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <value label="𝜔ₓ    =" unit="°/s" color="red"  precision="1">
+                <input>X</input>
+            </value>
+            <value label="𝜔ₓ    =" unit="rad/s" color="red"  precision="3">
+                <input>OMEGA_X</input>
+            </value>
+            <value label="𝑓ₓ    =" unit="Hz" color="red"  precision="4">
+                <input>F_X</input>
+            </value>
+            <info label=""/>
+            <value label="𝜔ᵧ    =" unit="°/s" color="green"  precision="1">
+                <input>Y</input>
+            </value>
+            <value label="𝜔ᵧ    =" unit="rad/s" color="green"  precision="3">
+                <input>OMEGA_Y</input>
+            </value>
+            <value label="𝑓ᵧ    =" unit="Hz" color="green"  precision="4">
+                <input>F_Y</input>
+            </value>
+            <info label=""/>
+            <value label="𝜔₂    =" unit="°/s" color="blue"  precision="1">
+                <input>Z</input>
+            </value>
+            <value label="𝜔₂    =" unit="rad/s" color="blue"  precision="3">
+                <input>OMEGA_Z</input>
+            </value>
+            <value label="𝑓₂    =" unit="Hz" color="blue"  precision="4">
+                <input>F_Z</input>
+            </value>
+        </view>
+        <view label="Winkelgeschwindigkeit">
+            <info label="Betrag der Winkelgeschwindigkeit:"  bold="true"/>
+            <info label="Der folgende Graph gibt den Betrag der Winkelgeschwindigkeit |𝜔⃗| unabhängig von der Raumrichtung in Radianten pro Sekunde (rad/s) an. Dabei entsprechen &quot;2𝜋 rad/s&quot; genau einer Umdrehung pro Sekunde."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="Winkelgeschwindigkeit 𝜔" unitX="s" unitY="rad/s" xPrecision="3" yPrecision="2">
+                <input axis="x">TIME</input>
+                <input axis="y">OMEGA_ABS</input>
+            </graph>
+            <info label=""/>
+            <info label="Komponenten der Winkelgeschwindigkeit:"  bold="true"/>
+            <info label="Die folgenden 3 Graphen geben die Winkelgeschwindigkeit 𝜔 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1" color="ff7e22" partialUpdate="true" labelX="Zeit 𝑡" labelY="Winkelgeschwindigkeit 𝜔" unitX="s" unitY="rad/s" xPrecision="3" yPrecision="2">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">OMEGA_X</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">OMEGA_Y</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">OMEGA_Z</input>
+            </graph>
+        </view>
+        <view label="Frequenz">
+            <info label="Betrag der Frequenz:"  bold="true"/>
+            <info label="Der folgende Graph gibt die Rotationsfrequenz 𝑓 in Umdrehungen pro Sekunde (Hz) unabhängig der Raumrichtung an."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="Frequenz 𝑓" unitX="s" unitY="Hz" xPrecision="3" yPrecision="1">
+                <input axis="x">TIME</input>
+                <input axis="y">F_ABS</input>
+            </graph>
+            <info label=""/>
+            <info label="Komponenten der Frequenz:"  bold="true"/>
+            <info label="Die folgenden 3 Graphen geben die Frequenz aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1" color="ff7e22" partialUpdate="true" labelX="Zeit 𝑡" labelY="Frequenz 𝑓" unitX="s" unitY="Hz" xPrecision="3" yPrecision="1">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">F_X</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">F_Y</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">F_Z</input>
+            </graph>
+        </view>
+    </views>
+    <export>
+      <set name="Winkelgeschwindigkeit">
+          <data name="Zeit t in s">TIME</data>
+          <data name="Betrag der Winkelgeschwindigkeit |ω| in rad/s">OMEGA_ABS</data>
+          <data name="X-Winkelgeschwindigkeit ω_x in rad/s">OMEGA_X</data>
+          <data name="Y-Winkelgeschwindigkeit ω_y in rad/s">OMEGA_Y</data>
+          <data name="Z-Winkelgeschwindigkeit ω_z in rad/s">OMEGA_Z</data>
+          <data name="Frequenz f in Hz">F_ABS</data>
+          <data name="X-Frequenz f_x in Hz">F_X</data>
+          <data name="Y-Frequenz f_y in Hz">F_Y</data>
+          <data name="Z-Frequenz f_z in Hz">F_Z</data>
+      </set>
+    </export>
+</phyphox>

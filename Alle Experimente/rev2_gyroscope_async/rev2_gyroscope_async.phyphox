@@ -1,0 +1,348 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.8" editor:version="1.0" locale="de">
+    <title>Winkelgeschwindigkeit (Async, Rev2)</title>
+    <category>Laborino-Experimente</category>
+    <description>Dieses Experiment misst die Winkelgeschwindigkeit 𝜔 um die x-, y- und z-Achse über einen wählbaren Zeitraum mit einstellbarer Frequenz und Messbereich und trägt den Betrag sowie die Komponenten aller 3 Achsen nach Abschluss der Messung in Graphen über der Zeit auf. Um höhere Messfrequenzen als bei der Echtzeitmessung zu ermöglichen, werden die Daten erst nach der Messung übertragen.</description>
+    <icon format="base64">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
+    </icon>
+    <data-containers>
+        <!-- COMMUNICATION                                      -->
+        <container size="1" init="0" >BT_INC</container>
+        <container size="1" init="1" >BT_OUTC</container>
+        <container size="1" init="0">STATUS</container>
+
+        <!-- OTHER                                              -->
+        <container size="1" init="4">FS_ID</container>
+        <container size="1" init="2000">FS_VAL</container>
+        <container size="1" init="2">ODR_ID</container>
+        <container size="1" init="100">ODR_VAL</container>
+        <container size="1" init="5">PERIOD</container>
+        <container size="1" >MAX_PERIOD</container>
+
+        <!-- DATA                                               -->
+        <container size="0" >TIME</container>
+        <container size="0" >X</container>
+        <container size="0" >Y</container>
+        <container size="0" >Z</container>
+
+        <!-- CALCULATIONS                                       -->
+        <container size="0" >ABS</container>
+        <container size="0" >OMEGA_X</container>
+        <container size="0" >OMEGA_Y</container>
+        <container size="0" >OMEGA_Z</container>
+        <container size="0" >OMEGA_ABS</container>
+        <container size="0" >F_X</container>
+        <container size="0" >F_Y</container>
+        <container size="0" >F_Z</container>
+        <container size="0" >F_ABS</container>
+
+        <!-- CALCULATE HELPER                                   -->
+        <container size="0" >X_CAL</container>
+        <container size="0" >Y_CAL</container>
+        <container size="0" >Z_CAL</container>
+        <container size="1" >LAST_IND</container>
+    </data-containers>
+    <input>
+        <bluetooth id="Sense" mode="notification" >
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="0">BT_INC</output>
+            <output char="c0880001-30f7-4671-8b43-5e40ba53514a" conversion="uInt8" offset="1">STATUS</output>
+
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">TIME</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">X</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">Y</output>
+            <output char="da1a0001-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="12">Z</output>
+        </bluetooth>
+    </input>
+    <output>
+        <bluetooth id="Sense" >
+            <config char="c0f10001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt32LittleEndian">7</config>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="0" conversion="uInt8">BT_OUTC</input>
+
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="1" conversion="uInt8">FS_ID</input>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="2" conversion="uInt8">ODR_ID</input>
+            <input char="c0880001-30f7-4671-8b43-5e40ba53514a" offset="3" conversion="uInt16LittleEndian">PERIOD</input>
+        </bluetooth>
+    </output>
+    <analysis>
+        <!-- ================================================== -->
+        <!-- SETUPS                                             -->
+        <!-- ================================================== -->
+        <!-- WHILE THE MEASUREMENT HAS NOT STARTED YET RESET THE DATA BUFFERS SINCE THEY CAN ALSO RECIEVE DATA WITH AN OLD TIMESTAMP AT THE VERY BEGINNING AFTER STARTING THE EXPERIMENT.-->
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">TIME</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">X</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Y</output>
+        </if>
+        <if equal="true">
+            <input as="a" keep="true">BT_INC</input>
+            <input as="b" type="value">0</input>
+            <input as="true" type="empty"></input>
+            <output as="result">Z</output>
+        </if>
+
+        <!-- CALCULATE THE MAXIMUM POSSIBLE MEASUREMENT TIME BASED ON THE CHOSEN
+        FREQUENCY. WE ASSUMED HERE A MAXIMUM MEASUREMENT LENGTH OF 9600
+        DATAPOINTS. OTHERWISE THE ARDUINOS MEMORY IS TOO FULL. -->
+        <divide>
+            <input as="dividend" type="value">7200</input>
+            <input as="divisor" keep="true">ODR_VAL</input>
+            <output as="quotient">MAX_PERIOD</output>
+        </divide>
+        <!-- IF A TOO LARGE VALUE IS ENTERED FOR THE MEASUREMENT TIME, SET IT
+        MANUALLY BACK TO THE MAXIMUM MEASUREMENT TIME (MAX_PERIOD). -->
+        <if equal="false" greater="true">
+            <input as="a" keep="true">PERIOD</input>
+            <input as="b" keep="true">MAX_PERIOD</input>
+            <input as="true" keep="true">MAX_PERIOD</input>
+            <input as="false" keep="true">PERIOD</input>
+            <output as="result">PERIOD</output>
+        </if>
+        <!-- ================================================== -->
+        <!-- CALCULATIONS                                       -->
+        <!-- ================================================== -->
+        <!-- COPY NEW DATA INTO CALC BUFFERS                    -->
+        <subrange>
+            <input as="from">LAST_IND</input>
+            <input keep="true">X</input>
+            <input keep="true">Y</input>
+            <input keep="true">Z</input>
+            <output>X_CAL</output>
+            <output>Y_CAL</output>
+            <output>Z_CAL</output>
+        </subrange>
+
+        <!-- SET CURRENT INDEX AS LAST INDEX                    -->
+        <count>
+            <input keep="true">TIME</input>
+            <output>LAST_IND</output>
+        </count>
+
+        <!-- CALCULATE THE ANGLE VELOCITIES IN RAD/S; ABOLUTE VALUE OF THE ANGLE
+        VELOCITY AND THE CORRESPONDING FREQUENCIES: -->
+        <formula formula="sqrt([1_]^2+[2_]^2+[3_]^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">ABS</output>
+        </formula>
+
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">X_CAL</input>
+            <output append="true">OMEGA_X</output>
+        </formula>
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">Y_CAL</input>
+            <output append="true">OMEGA_Y</output>
+        </formula>
+        <formula formula="2*3.14159265359*[1_]/360">
+            <input keep="true">Z_CAL</input>
+            <output append="true">OMEGA_Z</output>
+        </formula>
+
+        <!-- INSTEAD OF CALCULATING OMEGA AGAIN, THE BUFFERS OF OMEGA CAN BE CUT AGAIN VIA SUBRANGE AND CURR/LAST-INDEX AND THEN CALCULATED, BUT I DONT DO THAT HERE -->
+        <formula formula="sqrt((2*3.14159265359*[1_]/360)^2+(2*3.14159265359*[2_]/360)^2+(2*3.14159265359*[3_]/360)^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">OMEGA_ABS</output>
+        </formula>
+
+        <formula formula="[1_]/360">
+            <input keep="true">X_CAL</input>
+            <output append="true">F_X</output>
+        </formula>
+        <formula formula="[1_]/360">
+            <input keep="true">Y_CAL</input>
+            <output append="true">F_Y</output>
+        </formula>
+        <formula formula="[1_]/360">
+            <input keep="true">Z_CAL</input>
+            <output append="true">F_Z</output>
+        </formula>
+        <formula formula="sqrt(([1_]/360)^2+([2_]/360)^2+([3_]/360)^2)">
+            <input keep="true">X_CAL</input>
+            <input keep="true">Y_CAL</input>
+            <input keep="true">Z_CAL</input>
+            <output append="true">F_ABS</output>
+        </formula>
+    </analysis>
+    <views>
+        <view label="Info">
+            <info label="Dieses Experiment liest das Gyroskop des Laborinos für einen wählbaren Zeitraum mit einstellbarer Frequenz und Messbereich aus. Die Messdaten werden erst nach dem Ende der Messung übertragen, was höhere Messfrequenzen ermöglicht als bei der Messung in Echtzeit. Diese hohen Messfrequenzen sind insbesondere bei kurzen aber sehr schnellen Phänomenen von Vorteil, wenn eine hohe Zeitauflösung nötig ist. Ein Gyroskop misst die Winkelgeschwindigkeit des Laborinos. Das heißt, überall wo sich etwas dreht wie zum Beispiel bei Kreiseln, Zentrifugen, Pendeln oder fast allen Geräten, die mit Motoren laufen, können wir die Drehgeschwindigkeit messen."/>
+            <info label=""/>
+            <info label="Probiere es doch gleich mal aus!" bold="true"/>
+            <info label=""/>
+            <info label="Mit dem ► Knopf oben rechts kannst du die Messung starten. Nach dem Starten der Messung kannst du sie mit dem Ⅱ Knopf stoppen. Das Papierkorb Symbol löscht den aktuellen Datensatz. Mit dem ⁝ Symbol kannst du weitere Optionen aufrufen und zum Beispiel die Messung mit einer Verzögerung starten oder die aktuellen Messdaten exportieren."/>
+            <info label=""/>
+            <info label="In dem Tab WINKELGESCHWINDIGKEIT kannst du dir alle gemessenen Winkelgeschwindigkeiten über der Zeit auftragen lassen. Im Tab FREQUENZ wird die Winkelgeschwindigkeit 𝜔 in die Rotationsfrequenz 𝑓 umgerechnet und graphisch dargestellt. Der Tab EINSTELLUNGEN ermöglicht die Auswahl des Messbereichs, der Messfrequenz und der Messdauer."/>
+        </view>
+        <view label="Winkelgeschwindigkeit">
+          <info label="Status deiner Messung:" bold="true"/>
+            <value label="Status:">
+                <input>STATUS</input>
+                <map max="0">Bereit zum Messen (►)!</map>
+                <map max="1">Messung läuft...</map>
+                <map max="2">Datenübertragung läuft...</map>
+                <map max="3">Datenübertragung abgeschlossen!</map>
+            </value>
+            <info label=""/>
+            <info label="Betrag der Winkelgeschwindigkeit:"  bold="true"/>
+            <info label="Der folgende Graph gibt den Betrag der Winkelgeschwindigkeit |𝜔⃗| unabhängig von der Raumrichtung in Radianten pro Sekunde (rad/s) an. Dabei entsprechen &quot;2𝜋 rad/s&quot; genau einer Umdrehung pro Sekunde."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="Winkelgeschwindigkeit 𝜔" unitX="s" unitY="rad/s" xPrecision="3" yPrecision="3">
+                <input axis="x">TIME</input>
+                <input axis="y">OMEGA_ABS</input>
+            </graph>
+            <info label=""/>
+            <info label="Komponenten der Winkelgeschwindigkeit:"  bold="true"/>
+            <info label="Die folgenden 3 Graphen geben die Winkelgeschwindigkeit 𝜔 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1" color="ff7e22" partialUpdate="true" labelX="Zeit 𝑡" labelY="Winkelgeschwindigkeit 𝜔" unitX="s" unitY="rad/s" xPrecision="3" yPrecision="3">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">OMEGA_X</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">OMEGA_Y</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">OMEGA_Z</input>
+            </graph>
+        </view>
+        <view label="Frequenz">
+          <info label="Status deiner Messung:" bold="true"/>
+            <value label="Status:">
+                <input>STATUS</input>
+                <map max="0">Bereit zum Messen (►)!</map>
+                <map max="1">Messung läuft...</map>
+                <map max="2">Datenübertragung läuft...</map>
+                <map max="3">Datenübertragung abgeschlossen!</map>
+            </value>
+            <info label=""/>
+            <info label="Betrag der Frequenz:"  bold="true"/>
+            <info label="Der folgende Graph gibt die Rotationsfrequenz 𝑓 in Umdrehungen pro Sekunde (Hz) unabhängig der Raumrichtung an."/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1.5" color="ffffff" partialUpdate="true" labelX="Zeit 𝑡" labelY="Frequenz 𝑓" unitX="s" unitY="Hz" xPrecision="3" yPrecision="3">
+                <input axis="x">TIME</input>
+                <input axis="y">F_ABS</input>
+            </graph>
+            <info label=""/>
+            <info label="Komponenten der Frequenz:"  bold="true"/>
+            <info label="Die folgenden 3 Graphen geben die Frequenz 𝑓 aufgeteilt in die 3 Raumrichtugen (X, Y und Z) wieder. Die Orientierung der Achsen kannst du auf dem Laborino nachlesen."/>
+            <info label=""/>
+            <image src="image.png" lightFilter="invert" darkFilter="invert"/>
+            <info label=""/>
+            <graph label="" aspectRatio="2.0" style="lines" lineWidth="1" color="ff7e22" partialUpdate="true" labelX="Zeit 𝑡" labelY="Frequenz 𝑓" unitX="s" unitY="Hz" xPrecision="3" yPrecision="3">
+                <input axis="x"  color="red">TIME</input>
+                <input axis="y">F_X</input>
+                <input axis="x" color="green">TIME</input>
+                <input axis="y">F_Y</input>
+                <input axis="x"  color="blue">TIME</input>
+                <input axis="y">F_Z</input>
+            </graph>
+        </view>
+        <view label="Einstellungen">
+            <info label="Achtung!" bold="true"  color="red"/>
+            <info label="Eine Änderung der Einstellungen ist nur zwischen den Messungen möglich. Lösche dafür zunächst die aktuellen Messdaten, nehme die Änderungen an den Einstellungen vor und starte dann die Messung neu. Bitte beachte auch, dass nach jedem Löschen der Messung die Standardeinstellungen von 2000 °/s und 100 Hz wiederhergestellt werden." color="red"/>
+            <info label=""/>
+            <info label="Messbereich:" bold="true"/>
+            <info label="Hier kannst du den Messbereich des Gyroskops einstellen. Ein großer Messbereich erlaubt es, höhere Winkelgeschwindigkeiten zu erfassen, allerdings leidet die Genauigkeit etwas darunter. Du kannst einen Messbereich von ±125 °/s (ca. 0,35 Hz), ±250 °/s (ca. 0,7 Hz), ±500 °/s (ca. 1,4 Hz), ±1000°/s (ca. 2,8 Hz) oder ±2000 °/s (ca. 5,6 Hz) auswählen."/>
+            <info label=""/>
+            <value label="Aktueller Messbereich:" precision="0" signed="false" decimal="false"  unit="°/s">
+                <input>FS_VAL</input>
+            </value>
+            <info label=""/>
+            <button label="±125 °/s">
+                <input type="value">125</input>
+                <output>FS_VAL</output>
+                <input type="value">0</input>
+                <output>FS_ID</output>
+            </button>
+            <button label="±250 °/s">
+                <input type="value">250</input>
+                <output>FS_VAL</output>
+                <input type="value">1</input>
+                <output>FS_ID</output>
+            </button>
+            <button label="±500 °/s">
+                <input type="value">500</input>
+                <output>FS_VAL</output>
+                <input type="value">2</input>
+                <output>FS_ID</output>
+            </button>
+            <button label="±1000 °/s">
+                <input type="value">1000</input>
+                <output>FS_VAL</output>
+                <input type="value">3</input>
+                <output>FS_ID</output>
+            </button>
+            <button label="±2000 °/s">
+                <input type="value">2000</input>
+                <output>FS_VAL</output>
+                <input type="value">4</input>
+                <output>FS_ID</output>
+            </button>
+            <info label=""/>
+            <info label="Messfrequenz:" bold="true"/>
+            <info label="Hier kannst du die Messfrequenz des Gyroskops einstellen. Du kannst zwischen 25 Hz, 50 Hz und 100 Hz auswählen."/>
+            <info label=""/>
+            <value label="Aktuelle Messfrequenz:" precision="0" signed="false" decimal="false"  unit="Hz">
+                <input>ODR_VAL</input>
+            </value>
+            <info label=""/>
+            <button label="25 Hz">
+                <input type="value">25</input>
+                <output>ODR_VAL</output>
+                <input type="value">0</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="50 Hz">
+                <input type="value">50</input>
+                <output>ODR_VAL</output>
+                <input type="value">1</input>
+                <output>ODR_ID</output>
+            </button>
+            <button label="100 Hz">
+                <input type="value">100</input>
+                <output>ODR_VAL</output>
+                <input type="value">2</input>
+                <output>ODR_ID</output>
+            </button>
+            <info label=""/>
+            <info label="Messdauer:" bold="true"/>
+            <info label="Hier kannst du die Messdauer einstellen. Aufgrund des beschränkten Speicherplatzes auf dem Laborino, ist die Messdauer in Abhängigkeit der Messfrequenz begrenzt."/>
+            <info label=""/>
+            <value label="Maximale Messdauer:" precision="0" signed="false" decimal="false" unit="s">
+                <input>MAX_PERIOD</input>
+            </value>
+            <info label=""/>
+            <edit label="Wähle die Messdauer in Sekunden:" precision="0" signed="false" decimal="false" min="1" max="1000"  default="5">
+                <output>PERIOD</output>
+            </edit>
+        </view>
+    </views>
+    <export>
+      <set name="Winkelgeschwindigkeit">
+          <data name="Zeit t in s">TIME</data>
+          <data name="Betrag der Winkelgeschwindigkeit |ω| in rad/s">OMEGA_ABS</data>
+          <data name="X-Winkelgeschwindigkeit ω_x in rad/s">OMEGA_X</data>
+          <data name="Y-Winkelgeschwindigkeit ω_y in rad/s">OMEGA_Y</data>
+          <data name="Z-Winkelgeschwindigkeit ω_z in rad/s">OMEGA_Z</data>
+          <data name="Frequenz f in Hz">F_ABS</data>
+          <data name="X-Frequenz f_x in Hz">F_X</data>
+          <data name="Y-Frequenz f_y in Hz">F_Y</data>
+          <data name="Z-Frequenz f_z in Hz">F_Z</data>
+      </set>
+    </export>
+</phyphox>
